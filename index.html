@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>catFLIX</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body >
+        <header>
+         <div class="bg">
+          <div class="bg-gradient">
+           <div class="content">
+            <div class="logo">
+             <img src=".//FAVcat.jpeg">
+            <p>cat<span>FLIX</span></p>
+            </div>
+            
+            <div id="huh1" class="huh1">
+                <div><p>Bem vindo ao catFLIX, um app de streaming OnDemand para assitir suas series favoritas, este app está em fase de testes e foi desenvolvido pelo <a href="https://twitter.com/KlausThePuss" target="_blank" rel="noopener norefferer">@KlausThePuss</a>... Ola, eu me chamo Shirovisk, provavelmente meu dono esta dormindo agora, entao eu te ajudarei com o passo-a-passo para assistir a sua serie favorita, primeiramente, clique em "Séries". </p></div></div>
+            <div class="btnOpen" id="bntShow">
+             <button onclick="showSeries();">
+                
+                <img src="./video.png">
+                Séries
+            
+            </button>
+            </div>
+            <div class="btnClosee" id="bntHide">
+                
+             <button onclick="hideSeries(); refreshPage();"> 
+                
+                    <img src="./home.png">
+                
+                
+                    Página Principal
+                
+            </button>
+            </div>
+            
+            <div class="content1" id="content1">
+                <div id="huh2">
+                    <div class="huh2"><div><img src="./HUHcat.gif"/></div>
+                <div><p> Opa, olha eu aqui de novo, vamos proseguir com o passo-a-passo, agora escolha a sua serie favorita e clique na temporada desejada. </p></div></div>
+             
+                </div>
+                <div class="serie" id="serie">
+                
+                
+                <div class="xd">
+                    
+                    <h3>BLACK KNIGHT</h3>
+                    <div><img src=".//MV5BMWQ5MDI5ZGEtOGRjNi00ZDlmLWFlZjctZTE0NWZiYjdhYjRmXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg"></div>
+                   
+                   
+                </div>          
+                 
+                   <div class="season">
+                    
+                    <p>
+                        Black Knight é um dorama com o ator Shirovisk e escrito pela renomada autora Jinx. Devido à intensa poluição da atmosfera, a humanidade foi quase toda dizimada e um rígido sistema de classes foi instaurado. Uma dessas classes é a dos "Knights", entregadores que também são responsáveis pela segurança da população. 5-8 faz parte do esquadrão de elite e ajuda uma garota que sonha em se tornar uma Knight. 
+
+                    </p>
+                    <div class="tags">
+                        <button>Ficcao Cientifica</button>
+                        <button>Fantasia</button>
+                        <button>Acao</button>
+                        <button>Aventura</button>
+                    </div>
+                    <div id="showSeriesBTN" onclick="showSeasons();" class="btnSeasons">
+                        <button> Temporada 01</button>
+                       </div>   
+                 </div>
+                </div>
+                      
+             
+             
+                      
+             <div class="videos" id="videos">
+                <div id="huh3">
+                    <div class="huh3"><div><img src="./cat-cat-e.gif"/></div>
+                <div><p> Ta perdido? Fique tranquilo, pois agora só nos resta clicar no episodio desejado... Boa diversão. </p></div></div>
+             
+                </div>
+                <div class="epSeason" id="epSeason">
+                    
+                        <div class="btnEp"  onclick="showEp1()" >
+                            <button>
+                            <img id="img2" src="./play-button.png">Episodio 01
+                           </button>
+                        
+                    </div> 
+                    
+                        <div  class="btnEp"  onclick="showEp2()" >
+                            <button >
+                            <img id="img2" src="./play-button.png">Episodio 02
+                           </button>
+                        
+                           
+                    </div> 
+                    
+                        <div class="btnEp"  onclick="showEp3()" >
+                            <button>
+                            <img id="img2" src="./play-button.png">Episodio 03
+                           </button>
+                        
+                           
+                    </div> 
+                    
+                        <div class="btnEp"  onclick="showEp4()" >
+                            <button>
+                            <img id="img2" src="./play-button.png">Episodio 04
+                           </button>
+                        </div>
+                           
+                    
+                    
+                        <div class="btnEp"  onclick="showEp5()" >
+                            <button>
+                            <img id="img2" src="./play-button.png">Episodio 05
+                           </button>
+                        </div>
+                           
+                   
+                    
+                        <div class="btnEp"  onclick="showEp6()" >
+                            <button>
+                                <img id="img2" src="./play-button.png">Episodio 06
+                           </button>
+                        </div>
+                           
+                         
+                </div>
+                
+
+              <div class="ep">
+
+                <div class="BTN" >
+                    <div class="btnEp2" id="ep1">
+                        <button>
+                        Black Knight - Episodio 01
+                       </button>
+                    </div>
+                    <div onclick="hideEp1();">
+                        
+                        <div class="closebtn">
+                            <button>
+                                <img src="./close.png" alt="closebtn"/>
+                            </button>
+                        </div>
+                       
+                   </div>
+                </div>             
+            <div class="ep1"  id="epp">
+                <iframe
+                
+    src="https://iframe.mediadelivery.net/embed/153572/82ca5cac-63bf-458e-abb6-a09ebc40efc5?autoplay=false&loop=false&muted=false&preload=true"
+    wmode="transparent"
+    type="video/mp4"
+    width="100%" height="100%"
+    allow="autoplay; encrypted-media; picture-in-picture"
+    allowfullscreen
+    
+  ></iframe>
+            </div>
+            
+            
+            <div class="BTN" id="allEpBtn2">
+                <div class="btnEp2">
+                    <button>
+                    Episodio 02
+                   </button>
+                </div>
+                   <div onclick="hideEp2(); stopVideo2();" class="btnClose" id="closeEp2">
+                    <button >
+                        X
+                       </button>
+                   </div>
+            </div> 
+                <div class="ep2" id="ep2">
+                    <video id="video2" controls>
+                        <source   src=".//Black Knight S01E02 720p MP4 DUB Baixar SeriesMP4 xyz mp4.mp4" type="video/mp4">
+                       </video> 
+                </div>         
+                          
+              
+              
+                <div class="BTN" id="allEpBtn3">
+                    <div class="btnEp2">
+                        <button>
+                        Episodio 03
+                       </button>
+                    </div>
+                       <div onclick="hideEp3(); stopVideo3();" class="btnClose" id="closeEp3">
+                        <button >
+                            X
+                           </button>
+                       </div>
+                </div> 
+                <div class="ep3" id="ep3">
+                    <video id="video3"  controls>
+                        <source  src=".//Black Knight S01E03 720p MP4 DUB Baixar SeriesMP4 xyz mp4.mp4" type="video/mp4">
+                       </video>  
+                </div>  
+                
+                
+                <div class="BTN" id="allEpBtn4">
+                    <div class="btnEp2">
+                        <button>
+                        Episodio 04
+                       </button>
+                    </div>
+                       <div onclick="hideEp4(); stopVideo4();" class="btnClose" id="closeEp4">
+                        <button >
+                            X
+                           </button>
+                       </div>
+                </div> 
+                <div class="ep4" id="ep4">
+                    <video id="video4"  controls>
+                        <source  src=".//Black Knight S01E04 720p MP4 DUB Baixar SeriesMP4 xyz mp4.mp4" type="video/mp4">
+                       </video>  
+                </div>   
+                
+                
+                <div class="BTN" id="allEpBtn5">
+                    <div class="btnEp2">
+                        <button>
+                        Episodio 05
+                       </button>
+                    </div>
+                       <div onclick="hideEp5(); stopVideo5();" class="btnClose" id="closeEp5">
+                        <button >
+                            X
+                           </button>
+                       </div>
+                </div> 
+                <div class="ep5" id="ep5">
+                    <video id="video5"  controls>
+                        <source  src=".//Black Knight S01E05 720p MP4 DUB Baixar SeriesMP4 xyz mp4.mp4" type="video/mp4">
+                       </video>  
+                </div>         
+                <div class="BTN" id="allEpBtn6">
+                    <div class="BTN" >
+                    <div class="btnEp2">
+                        <button>
+                        Episodio 06
+                       </button>
+                    </div>
+                       <div onclick="hideEp6(); stopVideo6();" id="closeEp6">
+                        
+                            <div class="closebtn">
+                                <button>
+                                    <img src="./close.png" alt="closebtn"/>
+                                </button>
+                            </div>
+                           
+                       </div>
+                </div> 
+                <div class="ep6" id="ep6">
+                    <video id="video6" controls>
+                        <source  src=".//Black Knight S01E06 720p MP4 DUB Baixar SeriesMP4 xyz mp4.mp4" type="video/mp4">
+                       </video>  
+                </div>         
+               
+                     
+            </div>
+          </div>
+            
+             </div>
+             
+            
+             
+        </div>
+       </div>
+       
+        </header>
+        <script src="main.js"></script>
+    </body>
+</html>
